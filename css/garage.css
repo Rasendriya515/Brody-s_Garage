@@ -1,0 +1,199 @@
+view-transition {
+  navigation: auto;
+}
+
+@font-face {
+    font-family: 'Russo One';
+    src: url('../../assets/fonts/RussoOne.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../../assets/fonts/Oswald.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../assets/images/Ford\ GT.png");
+    background-size: 100% auto;
+    background-position: center 35%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: black;
+    height: 100vh;
+}
+
+.favorite-text {
+    color: white;
+    font-family: 'Oswald';
+    font-size: 40px;
+    font-weight: 400;
+    filter: drop-shadow(0px 0px 15px rgb(133, 133, 133));
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    letter-spacing: 3px;
+    padding: 10px;
+    width: fit-content;
+}
+
+.favorite-cars {
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    width: 100%;
+}
+
+.car-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    text-decoration: none;
+}
+
+.car-card img {
+    width: 100%;
+    height: auto;
+    border: 1px solid white;
+    border-radius: 15px;
+    filter: drop-shadow(0px 0px 10px rgb(80, 80, 80)) brightness(50%);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.car-card img:hover {
+    filter: drop-shadow(0px 0px 10px white) brightness(100%);
+    transform: scale(1.05);
+}
+
+.car-card h2 {
+    color: white;
+    font-family: 'Russo One';
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.exclusive-text {
+    color: white;
+    font-family: 'Oswald';
+    font-size: 40px;
+    font-weight: 400;
+    filter: drop-shadow(0px 0px 15px rgb(133, 133, 133));
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translateX(-50%);
+    letter-spacing: 3px;
+    padding: 10px;
+    width: fit-content;
+}
+
+.exclusive-cars {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    width: 100%;
+}
+
+.exclusive-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+}
+
+.exclusive-card img {
+    width: 100%;
+    height: auto;
+    border: 1px solid white;
+    border-radius: 15px;
+    filter: drop-shadow(0px 0px 10px rgb(80, 80, 80)) brightness(50%);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.exclusive-card img:hover {
+    filter: drop-shadow(0px 0px 10px white) brightness(100%);
+    transform: scale(1.05);
+}
+
+.exclusive-card h2 {
+    color: white;
+    font-family: 'Russo One';
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.arrow-back-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    padding-left: 8px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    top: 2%;
+    left: 1%;
+    z-index: 100;
+    overflow: hidden;
+    transition: width 0.4s ease;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.arrow-back-container span {
+    opacity: 0;
+    max-width: 0;
+    white-space: nowrap;
+    margin-left: 0;
+    color: white;
+    font-weight: 500;
+    font-family: 'Oswald';
+    font-size: 20px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.arrow-back-container:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 160px;
+}
+
+.arrow-back-container:hover span {
+    max-width: 160px;
+    opacity: 1;
+    margin-left: 10px;
+}
+
+.arrow-back-container img {
+    border: 3px solid rgb(253, 110, 44);
+    border-radius: 50%;
+    background-color: rgb(188, 188, 188);
+    padding: 4px;
+    margin: 0;
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    display: block;
+}

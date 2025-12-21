@@ -1,0 +1,190 @@
+@view-transition {
+  navigation: auto;
+}
+
+@font-face {
+    font-family: 'Russo One';
+    src: url('../../assets/fonts/RussoOne.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../../assets/fonts/Oswald.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.9) 15%, rgba(0,0,0,0) 80%), 
+                      url("../../assets/images/Koenigsegg\ One\ \(8\).jpg");
+    background-size: 100% auto;
+    background-position: center 125%;
+    background-repeat: no-repeat;
+    background-color: #eef1f4;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.koegnisegg-one-spesification {
+    color: rgb(255, 242, 237);
+    font-family: 'Russo One';
+    font-size: 37px;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    position: absolute;
+    bottom: 25%;
+    left: 27%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    width: fit-content;
+}
+
+.koegnisegg-one-spec-full {
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    color: white;
+    font-family: 'Oswald';
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    position: absolute;
+    bottom: 30%;
+    right: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8px;
+    width: fit-content;
+    transition: transform 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.koegnisegg-one-spec-full:hover {
+    transform: scale(1.1);
+}
+
+.koegnisegg-one-spec-logo {
+    position: absolute;
+    bottom: 15%;
+    left: 0;
+    box-sizing: border-box;
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    height: 14%;
+    align-items: center;
+}
+
+.koegnisegg-one-spec-logo img {
+    width: 5%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+.koegnisegg-one-spec-name {
+    color: white;
+    font-family: 'Russo One';
+    text-transform: uppercase;
+    font-size: 17px;
+    position: absolute;
+    bottom: 11%;
+    left: 0;
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.koegnisegg-one-spec-name h2 {
+    width: 20%;
+    text-align: center;
+    margin: 0;
+    letter-spacing: 3px;
+}
+
+.koegnisegg-one-spec-name-detail {
+    color: white;
+    font-family: 'Oswald';
+    font-size: 17px;
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.koegnisegg-one-spec-name-detail h2 {
+    width: 20%;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.arrow-back-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    padding-left: 8px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    top: 2%;
+    left: 1%;
+    z-index: 100;
+    overflow: hidden;
+    transition: width 0.4s ease;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.arrow-back-container span {
+    opacity: 0;
+    max-width: 0;
+    white-space: nowrap;
+    margin-left: 0;
+    color: #181818;
+    font-weight: 500;
+    font-family: 'Oswald';
+    font-size: 20px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.arrow-back-container:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 125px;
+}
+
+.arrow-back-container:hover span {
+    max-width: 125px;
+    opacity: 1;
+    margin-left: 10px;
+}
+
+.arrow-back-container img {
+    border: 3px solid rgb(253, 110, 44);
+    border-radius: 50%;
+    background-color: rgb(188, 188, 188);
+    padding: 4px;
+    margin: 0;
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    display: block;
+}
