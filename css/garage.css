@@ -4,18 +4,18 @@ view-transition {
 
 @font-face {
     font-family: 'Russo One';
-    src: url('../../assets/fonts/RussoOne.ttf') format('truetype');
+    src: url('../assets/fonts/RussoOne.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Oswald';
-    src: url('../../assets/fonts/Oswald.ttf') format('truetype');
+    src: url('../assets/fonts/Oswald.ttf') format('truetype');
 }
 
 body {
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../assets/images/Ford\ GT.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/images/Ford\ GT.png");
     background-size: 100% auto;
     background-position: center 35%;
     background-repeat: no-repeat;

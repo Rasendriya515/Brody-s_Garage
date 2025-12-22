@@ -4,18 +4,18 @@
 
 @font-face {
     font-family: 'Oswald';
-    src: url('../../assets/fonts/Oswald.ttf') format('truetype');
+    src: url('../assets/fonts/Oswald.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Russo One';
-    src: url('../../assets/fonts/RussoOne.ttf') format('truetype');
+    src: url('../assets/fonts/RussoOne.ttf') format('truetype');
 }
 
 body {
     margin: 0;
     padding: 0;
-    background-image: url("../../assets/images/BMW\ M8\ GTE\ \'19.png");
+    background-image: url("../assets/images/BMW\ M8\ GTE\ \'19.png");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
