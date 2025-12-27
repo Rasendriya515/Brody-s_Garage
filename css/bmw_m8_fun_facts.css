@@ -17,8 +17,8 @@ body {
     padding: 0;
     background-image: linear-gradient(to top, rgba(0,0,0,1) 10%, rgba(0,0,0,0) 100%), 
                       url("../assets/images/BMW\ M8\ GTE\ \'19\ \(4\).jpg");
-    background-size: 100% auto;
-    background-position: center 35%;
+    background-size: 100%;
+    background-position: center;
     background-repeat: no-repeat;
     background-color: #eef1f4;
     background-attachment: fixed;
@@ -28,7 +28,7 @@ body {
 .bmw-m8-fun-facts-detail {
     color: white;
     font-family: 'Oswald';
-    font-size: 27px;
+    font-size: 21px;
     letter-spacing: 2px;
     margin-left: 10px;
     margin-right: 10px;

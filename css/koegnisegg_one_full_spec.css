@@ -38,7 +38,7 @@ body {
 }
 
 .koegnisegg-one-full-spec img {
-    width: 300px;
+    width: 250px;
     height: auto;
     filter: drop-shadow(1px 1px 1px white);
 }
@@ -46,7 +46,7 @@ body {
 .koegnisegg-one-full-spec-text {
     color: white;
     font-family: 'Russo One';
-    font-size: 35px;
+    font-size: 30px;
     font-weight: lighter;
     position: absolute;
     top: 44%;
@@ -60,7 +60,7 @@ body {
 .koegnisegg-one-detail-full-spec {
     color: white;
     font-family: 'Oswald';
-    font-size: 24px;
+    font-size: 20px;
     letter-spacing: 2px;
     margin-left: 10px;
     margin-right: 10px;

@@ -18,31 +18,33 @@ body {
     height: 100vh;
     background-color: #0e0e0e; 
     background-image: 
-        linear-gradient(to right, rgba(14,14,14,0) 50%, #0e0e0e 100%),
-        url("../assets/images/Koenigsegg\ One\ \(16\).jpg");
-    background-size: 75%; 
+        linear-gradient(to right, rgba(14,14,14,0) 30%, #0e0e0e 100%),
+        url("../assets/images/Koenigsegg One (16).jpg");
+    background-size: 75%;
     background-position: left;
     background-repeat: no-repeat;
     background-attachment: fixed;
     overflow: hidden;
 }
 
-.content-wrapper {
+.profile-container {
     position: absolute;
-    right: 5%;
     top: 50%;
+    right: 5%;
     transform: translateY(-50%);
     width: 30%;
+    max-width: 550px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
     text-align: center;
+    gap: 20px;
+    z-index: 10;
 }
 
 .koegnisegg-logo img {
-    width: 200px;
+    width: 180px;
     height: auto;
     object-fit: contain;
 }
@@ -50,56 +52,57 @@ body {
 .koegnisegg-one-title {
     color: white;
     font-family: 'Russo One';
-    font-size: 30px;
+    font-size: 36px;
     text-decoration: underline;
     letter-spacing: 2px;
     margin: 0;
+    line-height: 1.2;
 }
 
-.koegnisegg-one-profile {
+.koegnisegg-one-text {
     color: white;
     font-family: 'Oswald';
-    font-size: 24px;
+    font-size: 20px;
     letter-spacing: 1px;
     line-height: 1.5;
     margin: 0;
 }
 
-.koegnisegg-one-text-spec {
-    border: 3px solid rgba(255, 255, 255, 0.3);
+.koegnisegg-button {
+    border: 3px solid rgba(255, 255, 255, 0.4);
     border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(1px);
-    -webkit-backdrop-filter: blur(1px);
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     color: white;
     font-family: 'Oswald';
-    font-size: 23px;
+    font-size: 20px;
     letter-spacing: 2px;
-    padding: 10px 30px;
+    padding: 10px 35px;
     cursor: pointer;
-    transition: transform 0.3s;
+    transition: transform 0.3s, background-color 0.3s;
     text-decoration: none;
-    margin-top: 10px;
 }
 
-.koegnisegg-one-text-spec:hover {
-    transform: scale(1.1);
+.koegnisegg-button:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .arrow-back-container {
     background-color: rgba(255, 255, 255, 0.1);
-    border: 1px solid black;
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 50px;
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     padding: 0;
-    padding-left: 8px;
+    padding-left: 6px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     position: absolute;
-    top: 2%;
-    left: 1%;
+    top: 20px;
+    left: 20px;
     z-index: 100;
     overflow: hidden;
     transition: width 0.4s ease;
@@ -115,18 +118,18 @@ body {
     color: #181818;
     font-weight: 500;
     font-family: 'Oswald';
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 1px;
     transition: all 0.3s ease;
 }
 
 .arrow-back-container:hover {
     background-color: rgba(255, 255, 255, 0.2);
-    width: 220px;
+    width: 200px;
 }
 
 .arrow-back-container:hover span {
-    max-width: 220px;
+    max-width: 200px;
     opacity: 1;
     margin-left: 10px;
 }
@@ -138,7 +141,20 @@ body {
     padding: 4px;
     margin: 0;
     flex-shrink: 0;
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
     display: block;
+}
+
+@media (max-height: 700px) {
+    .profile-container {
+        gap: 10px;
+        width: 30%;
+    }
+    .koegnisegg-one-title {
+        font-size: 28px;
+    }
+    .koegnisegg-one-text {
+        font-size: 20px;
+    }
 }
