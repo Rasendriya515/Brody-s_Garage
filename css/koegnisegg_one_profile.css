@@ -20,26 +20,29 @@ body {
     background-image: 
         linear-gradient(to right, rgba(14,14,14,0) 50%, #0e0e0e 100%),
         url("../assets/images/Koenigsegg\ One\ \(16\).jpg");
-    background-size: 85% auto; 
-    background-position: left 50%;
+    background-size: 75%; 
+    background-position: left;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    overflow: hidden;
 }
 
-.koegnisegg-logo {
+.content-wrapper {
     position: absolute;
-    top: 25px;
-    right: 10%;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30%;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
-    padding: 10px;
-    width: fit-content;
-    background: transparent;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
 }
 
 .koegnisegg-logo img {
-    width: 130px;
+    width: 200px;
     height: auto;
     object-fit: contain;
 }
@@ -47,33 +50,19 @@ body {
 .koegnisegg-one-title {
     color: white;
     font-family: 'Russo One';
-    font-size: 26px;
+    font-size: 30px;
     text-decoration: underline;
     letter-spacing: 2px;
-    position: absolute;
-    top: 19%;
-    right: 6%;
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    padding: 10px;
-    width: fit-content;
+    margin: 0;
 }
 
 .koegnisegg-one-profile {
     color: white;
     font-family: 'Oswald';
-    font-size: 19px;
+    font-size: 24px;
     letter-spacing: 1px;
-    text-align: center;
-    position: absolute;
-    bottom: 10%;
-    right: 2%;
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    padding: 10px;
-    width: 25%;
+    line-height: 1.5;
+    margin: 0;
 }
 
 .koegnisegg-one-text-spec {
@@ -86,17 +75,11 @@ body {
     font-family: 'Oswald';
     font-size: 23px;
     letter-spacing: 2px;
-    text-align: center;
-    position: absolute;
-    bottom: 20px;
-    right: 10%;
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    padding: 10px;
+    padding: 10px 30px;
     cursor: pointer;
     transition: transform 0.3s;
     text-decoration: none;
+    margin-top: 10px;
 }
 
 .koegnisegg-one-text-spec:hover {

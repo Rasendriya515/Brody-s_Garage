@@ -15,10 +15,10 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(to top, rgba(0,0,0,1) 10%, rgba(0,0,0,0) 80%), 
-                      url("../assets/images/BMW\ M8\ GTE\ \'19\ \(3\).jpg");
+    background-image: linear-gradient(to top, rgba(0,0,0,0.9) 15%, rgba(0,0,0,0) 80%), 
+                      url("../assets/images/BMW M8 GTE '19 (3).jpg");
     background-size: 100% auto;
-    background-position: center 24%;
+    background-position: center 60%;
     background-repeat: no-repeat;
     background-color: #eef1f4;
     background-attachment: fixed;
@@ -32,8 +32,8 @@ body {
     font-weight: lighter;
     letter-spacing: 3px;
     position: absolute;
-    bottom: 200px;
-    left: 27%;
+    bottom: 25%;
+    left: 23%;
     transform: translateX(-50%);
     display: flex;
     flex-direction: column;
@@ -54,8 +54,8 @@ body {
     font-weight: 400;
     letter-spacing: 3px;
     position: absolute;
-    bottom: 230px;
-    left: 79%;
+    bottom: 30%;
+    right: 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -72,7 +72,7 @@ body {
 
 .bmw-m8-spec-logo {
     position: absolute;
-    top: 480px;
+    bottom: 15%;
     left: 0;
     box-sizing: border-box;
     display: flex;
@@ -96,7 +96,7 @@ body {
     text-transform: uppercase;
     font-size: 17px;
     position: absolute;
-    top: 575px;
+    bottom: 11%;
     left: 0;
     box-sizing: border-box;
     display: flex;
@@ -116,7 +116,7 @@ body {
     font-family: 'Oswald';
     font-size: 17px;
     position: absolute;
-    top: 610px;
+    bottom: 5%;
     left: 0;
     box-sizing: border-box;
     display: flex;
@@ -158,7 +158,8 @@ body {
     max-width: 0;
     white-space: nowrap;
     margin-left: 0;
-    color: white;
+    color: #3c5d9a;
+    font-weight: 500;
     font-family: 'Oswald';
     font-size: 20px;
     letter-spacing: 1px;
@@ -167,11 +168,11 @@ body {
 
 .arrow-back-container:hover {
     background-color: rgba(255, 255, 255, 0.2);
-    width: 120px;
+    width: 125px;
 }
 
 .arrow-back-container:hover span {
-    max-width: 120px;
+    max-width: 125px;
     opacity: 1;
     margin-left: 10px;
 }
